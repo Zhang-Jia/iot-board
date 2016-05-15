@@ -141,6 +141,15 @@
         title && ($out += ' <div class="title">', $out += $escape(title), $out += "</div> "), 
         new String($out);
     }), /*v:5*/
+    template("SmartHomePlug", function($data) {
+        "use strict";
+        var $utils = this, $escape = ($utils.$helpers, $utils.$escape), title = $data.title, status = $data.status, cnt = $data.cnt, $out = "";
+        return $out += '<div class="plug-title">', $out += $escape(title), $out += '</div> <div class="plug-wrap"> <input type="checkbox" class="slider-v1" ', 
+        $out += $escape(status[0] ? "checked" : ""), $out += ' id="autogen-plug-', $out += $escape(cnt), 
+        $out += '" /> <label for="autogen-plug-', $out += $escape(cnt), $out += '"></label> </div> <div class="clf"></div> </script> <script type="text/html" id="template-text"> ', 
+        title && ($out += ' <div class="title">', $out += $escape(title), $out += "</div> "), 
+        new String($out);
+    }), /*v:5*/
     template("pm25", function($data) {
         "use strict";
         var $utils = this, title = ($utils.$helpers, $data.title), $escape = $utils.$escape, status = $data.status, $out = "";

@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>IOT Board</title>
+  <title>IOT SmartHome</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -21,6 +21,7 @@
   <script src="widgets/templates/template.js"></script>
 
   <!-- add widget css files here -->
+  <link rel="stylesheet" href="widgets/stylesheets/SmartHomePlug.css" media="screen" type="text/css" />
   <link rel="stylesheet" href="widgets/stylesheets/temperature.css" media="screen" type="text/css" />
   <link rel="stylesheet" href="widgets/stylesheets/pm25.css" media="screen" type="text/css" />
   <link rel="stylesheet" href="widgets/stylesheets/text.css" media="screen" type="text/css" />
@@ -33,6 +34,7 @@
   <!-- -->
 
   <!-- add widget js files here -->
+  <script src="widgets/javascripts/SmartHomePlug.js"></script>
   <script src="widgets/javascripts/temperature.js"></script>
   <script src="widgets/javascripts/pm25.js"></script>
   <script src="widgets/javascripts/text.js"></script>
@@ -55,6 +57,7 @@
   <!-- -->
 </head>
 <body>
+  <div class="widget" iotb-widget="SmartHomePlug" data-label="switch" data-title="小A插座"></div>
   <div class="widget" iotb-widget="temperature" data-label="temperature" data-title="温度"></div>
   <div class="widget" iotb-widget="pm25" data-label="pm25" data-title="PM2.5"></div>
   <div class="widget" iotb-widget="text" data-label="text" data-title="消息"></div>
